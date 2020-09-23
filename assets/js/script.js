@@ -10,7 +10,7 @@ var fiveEl= document.querySelector("#fivePm");
 var saveBtn = document.querySelector(".saveBtn");
 var today = document.querySelector("#currentDay");
 
-var momentEl = moment().hours(Number);
+var momentEl = moment().hour(Number);
 today.innerHTML = (momentEl);
 
 
@@ -75,68 +75,68 @@ var times =["9AM-UR","10AM-UR",
         
         //setting up present,past and future time
 
-        if (moment().format("HH") == $(nineEl).attr("data-time"))
-        $(nineEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(nineEl).attr("data-time"))
-        $(nineEl).css("backgroundColor", "green");
+        if (momentEl == $(nineEl).attr("data-time"))
+        $(nineEl).addClass("present");
+    else if (momentEl > $(nineEl).attr("data-time"))
+        $(nineEl).addClass("future");
     else
-        $(nineEl).css("backgroundColor", "lightgray");
+        $(nineEl).addClass("past");
 
-    if (moment().format("HH") == $(tenEl).attr("data-time"))
-        $(tenEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(tenEl).attr("data-time"))
-        $(tenEl).css("backgroundColor", "green");
+    if (momentEl == $(tenEl).attr("data-time"))
+        $(tenEl).addClass("present");
+    else if (momentEl > $(tenEl).attr("data-time"))
+        $(tenEl).addClass("future");
     else
-        $(tenEl).css("backgroundColor", "lightgray");
+        $(tenEl).addClass("past");
 
-    if (moment().format("HH") == $(elevenEl).attr("data-time"))
-        $(elevenEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(elevenEl).attr("data-time"))
-        $(elevenEl).css("backgroundColor", "green");
+    if (momentEl == $(elevenEl).attr("data-time"))
+        $(elevenEl).addClass("present");
+    else if (momentEl > $(elevenEl).attr("data-time"))
+        $(elevenEl).addClass("future");
     else
-        $(elevenEl).css("backgroundColor", "lightgray");
+        $(elevenEl).addClass("past");
 
-    if (moment().format("HH") == $(twelveEl).attr("data-time"))
-        $(twelveEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(twelveEl).attr("data-time"))
-        $(twelveEl).css("backgroundColor", "green");
+    if (momentEl == $(twelveEl).attr("data-time"))
+        $(twelveEl).addClass("present");
+    else if (momentEl > $(twelveEl).attr("data-time"))
+        $(twelveEl).addClass("future");
     else
-        $(twelveEl).css("backgroundColor", "lightgray");
+        $(twelveEl).addClass("past");
 
-    if (moment().format("HH") == $(oneEl).attr("data-time"))
-        $(oneEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(oneEl).attr("data-time"))
-        $(oneEl).css("backgroundColor", "green");
+    if (momentEl == $(oneEl).attr("data-time"))
+        $(oneEl).addClass("present");
+    else if (momentEl > $(oneEl).attr("data-time"))
+        $(oneEl).addClass("future");
     else
-        $(oneEl).css("backgroundColor", "lightgray");
+        $(oneEl).addClass("past");
 
-    if (moment().format("HH") == $(twoEl).attr("data-time"))
-        $(twoEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(twoEl).attr("data-time"))
-        $(twoEl).css("backgroundColor", "green");
+    if (momentEl == $(twoEl).attr("data-time"))
+        $(twoEl).addClass("present");
+    else if (momentEl > $(twoEl).attr("data-time"))
+        $(twoEl).addClass("future");
     else
-        $(twoEl).css("backgroundColor", "lightgray");
+        $(twoEl).addClass("past");
 
-    if (moment().format("HH") == $(threeEl).attr("data-time"))
-        $(threeEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(threeEl).attr("data-time"))
-        $(threeEl).css("backgroundColor", "green");
+    if (momentEl == $(threeEl).attr("data-time"))
+        $(threeEl).addClass("present");
+    else if (momentEl > $(threeEl).attr("data-time"))
+        $(threeEl).addClass("future");
     else
-        $(threeEl).css("backgroundColor", "lightgray");
+        $(threeEl).addClass("past");
 
-    if (moment().format("HH") == $(fourEl).attr("data-time"))
-        $(fourEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(fourEl).attr("data-time"))
-        $(fourEl).css("backgroundColor", "green");
+    if (momentEl == $(fourEl).attr("data-time"))
+        $(fourEl).addClass("present");
+    else if (momentEl > $(fourEl).attr("data-time"))
+        $(fourEl).addClass("future");
     else
-        $(fourEl).css("backgroundColor", "lightgray");
+        $(fourEl).addClass("past");
 
-    if (moment().format("HH") == $(fiveEl).attr("data-time"))
-        $(fiveEl).css("backgroundColor", "red");
-    else if (moment().format("HH") > $(fiveEl).attr("data-time"))
-        $(fiveEl).css("backgroundColor", "green");
+    if (momentEl == $(fiveEl).attr("data-time"))
+        $(fiveEl).addClass("present");
+    else if (momentEl > $(fiveEl).attr("data-time"))
+        $(fiveEl).addClass("future");
     else
-        $(fiveEl).css("backgroundColor", "lightgray");
+        $(fiveEl).addClass("past");
 
           
     }
